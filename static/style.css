@@ -11,7 +11,7 @@
 body {
     background: url(bg-bw.jpg);
     background-size: cover;
-    min-height: 100vh;
+    min-height: 100dvh;
     margin: 0;
     font-family: Times New Roman;
     font-size: 1.25em;
@@ -22,7 +22,7 @@ body {
     border-left: 5px outset var(--alt-bg);
     border-right: 5px outset var(--alt-bg);
     max-width: 960px;
-    min-height: 100vh;
+    min-height: 100dvh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -41,7 +41,7 @@ body {
     }
 }
 .bar {
-    height: 4vh;
+    height: 4dvh;
     width: 100%;
     display: flex;
 }
@@ -79,11 +79,11 @@ body {
     border-right: none;
 }
 #main-box {
-    height: 90vh;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    height: 90dvh;
+    padding-top: 1dvh;
+    padding-bottom: 1dvh;
+    padding-left: 2dvh;
+    padding-right: 2dvh;
     color: var(--text);
     overflow: scroll;
 }
