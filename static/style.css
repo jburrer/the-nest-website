@@ -31,6 +31,8 @@ body {
         border: none !important;
         width: 100% !important;
     }
+}
+@media screen and (max-width: 650px) {
     h1 {
         font-size: calc(8vw) !important;
     }
