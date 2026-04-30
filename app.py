@@ -26,5 +26,9 @@ def guidelines():
 def finances():
     return render_template('finances.html')
 
+@app.route('/calc')
+def calc():
+    return render_template('calc.html')
+
 if __name__ == '__main__':
     app.run()

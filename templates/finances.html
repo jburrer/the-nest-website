@@ -1,27 +1,11 @@
 {% extends "layout.html" %}
 
-{%block style %}
+{% block style %}
 table {
     width: 100%;
     table-layout: fixed;
-    border-collapse: collapse;
     text-align: center;
 }
-th, td {
-    border: 1px outset var(--alt-bg);
-}
-th {
-    background-color: var(--alt-bg);
-    color: var(--hl);
-}
-td {
-    color: var(--text);
-}
-/*
-h2 {
-    margin-top: 5%;
-}
-*/
 {% endblock %}
 
 {% block bottomlinks %}

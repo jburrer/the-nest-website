@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block style %}
+table {
+    font-size: 1.5em;
+}
+input {
+    font-size: 1em;
+    background-color: transparent;
+    color: yellow;
+    border: none;
+    font-family: Times New Roman;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+th, td {
+    width: 5%;
+}
+button {
+    height: 5dvh;
+    background-color: green;
+    color: yellow;
+    border: 5px outset var(--alt-bg-1);
+    font-family: Times New Roman;
+    font-size: 1.5em;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+button:hover {
+    border: 5px inset var(--alt-bg-1);
+    padding-top: 5px;
+}
+{% endblock %}
+
+{% block content %}
+<h1>Calculate Show Finances</h1>
+
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th>Band 1</th>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <th>Band 2</th>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <th>Band 3</th>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <th>Band 4</th>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <th>Band 5</th>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <th>Income</th>
+      <th>
+        <input type="number" />
+      </th>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<center>
+  <button>Calculate</button>
+</center>
+
+{% endblock %}

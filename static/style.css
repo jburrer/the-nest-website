@@ -110,3 +110,16 @@ p {
     padding: 1%;
     margin: 0;
 }
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px outset var(--alt-bg);
+}
+th {
+    background-color: var(--alt-bg);
+    color: var(--hl);
+}
+td {
+    color: var(--text);
+}
