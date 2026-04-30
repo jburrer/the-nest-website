@@ -24,8 +24,8 @@
     .bar {
         height: 5dvh !important;
     }
-    .bar a {
-        overflow: hidden !important;
+    #main-box {
+        height: 88dvh !important;
     }
 }
 body {
@@ -85,7 +85,7 @@ body {
     border-right: none;
 }
 #main-box {
-    height: 88dvh;
+    height: 90dvh;
     padding-top: 1dvh;
     padding-bottom: 1dvh;
     padding-left: 2dvh;
