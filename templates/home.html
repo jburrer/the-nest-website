@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block style %}
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 650px) {
     #top {
         flex-direction: column !important;
         height: unset !important;
@@ -20,6 +20,9 @@
         width: 100% !important;
         text-align: center !important;
     }
+    #titlebox h1 {
+        font-size: calc(10vw) !important;
+    }
     #linkbox {
         margin: auto !important;
         margin-top: 3% !important;
@@ -34,7 +37,12 @@
     }
     #left, #right {
         width: 100% !important;
-        margin-bottom: 5% !important;
+    }
+    #left {
+            margin-bottom: 2% !important;
+    }
+    #right {
+            margin-bottom: 5% !important;
     }
 }
 h1 {
