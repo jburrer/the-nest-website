@@ -22,7 +22,7 @@
         font-size: calc(6vw) !important;
     }
     .bar {
-        height: 6dvh !important;
+        height: 5dvh !important;
     }
 }
 body {
@@ -82,7 +82,7 @@ body {
     border-right: none;
 }
 #main-box {
-    height: 90dvh;
+    height: 88dvh;
     padding-top: 1dvh;
     padding-bottom: 1dvh;
     padding-left: 2dvh;
