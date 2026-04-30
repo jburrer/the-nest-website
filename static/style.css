@@ -34,6 +34,9 @@ body {
     h1 {
         font-size: calc(8vw) !important;
     }
+    h2 {
+        font-size: calc(4vw) !important;
+    }
 }
 .bar {
     height: 4vh;
