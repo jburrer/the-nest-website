@@ -8,6 +8,23 @@
   --alt-hl: pink;
   --text: white;
 }
+@media screen and (max-width: 1000px) {
+    #page {
+        border: none !important;
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 650px) {
+    h1 {
+        font-size: calc(8vw) !important;
+    }
+    h2 {
+        font-size: calc(6vw) !important;
+    }
+    .bar {
+        height: 6dvh !important;
+    }
+}
 body {
     background: url(bg-bw.jpg);
     background-size: cover;
@@ -25,20 +42,6 @@ body {
     min-height: 100dvh;
     margin-left: auto;
     margin-right: auto;
-}
-@media screen and (max-width: 1000px) {
-    #page {
-        border: none !important;
-        width: 100% !important;
-    }
-}
-@media screen and (max-width: 650px) {
-    h1 {
-        font-size: calc(8vw) !important;
-    }
-    h2 {
-        font-size: calc(6vw) !important;
-    }
 }
 .bar {
     height: 4dvh;
