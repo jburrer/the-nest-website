@@ -1,0 +1,60 @@
+<!DOCTYPE html lang="en">
+<html>
+  <head>
+
+    <title>The Nest - Nonprofit Music Venue in West Lafayette, IN</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="96x96"
+          href="{{ url_for('static', filename='favicon-96x96.png') }}" />
+    <link rel="icon" type="image/svg+xml"
+          href="{{ url_for('static', filename='favicon.svg') }}" />
+    <link rel="shortcut icon"
+          href="{{ url_for('static', filename='favicon.ico') }}" />
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="{{ url_for('static', filename='apple-touch-icon.png') }}" />
+    <meta name="apple-mobile-web-app-title" content="Nest" />
+    <link rel="manifest"
+          href="{{ url_for('static', filename='site.webmanifest') }}" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+    {% block style %}{% endblock %}
+    </style>
+
+  </head>
+  <body>
+    <div id="page">
+
+      <div class="bar" id="topbar">
+
+        {% block toplinks %}
+        <a id="home" href="/">Home</a>
+        <a id="about" href="/about">About</a>
+        <a id="donate" href="/donate">Donate</a>
+        <a id="merch" href="/merch">Merch</a>
+        {% endblock %}
+
+      </div>
+
+      <div id="main-box">
+
+        {% block content  %}{% endblock %}
+
+      </div>
+
+      <div class="bar" id="bottombar">
+
+        {% block bottomlinks %}
+        <a id="performance" href="/guidelines">Performance Guidelines</a>
+        <a id="finances" href="/finances">Finances</a>
+        {% endblock %}
+
+      </div>
+
+    </div>
+  </body>
+</html>

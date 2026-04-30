@@ -1,0 +1,243 @@
+{% extends "layout.html" %}
+
+{% block style %}
+@media screen and (max-width: 1000px) {
+    #topsides {
+        flex-direction: column !important;
+    }
+    #topleft, #topright {
+        width: calc(100% - 5px) !important;
+        margin-bottom: 2% !important;
+    }
+    #tiers {
+        flex-wrap: wrap !important;
+    }
+    .tier {
+        width: calc(50% - 10px) !important;
+    }
+    #bottom {
+        margin-bottom: 1% !important;
+    }
+}
+#container {
+    display: flex;
+    flex-direction: column;
+}
+#top {
+    display: flex;
+    flex-direction: column;
+    height: 37%;
+}
+#topsides {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#topleft, #topright {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+#topright {
+    padding-left: 1%;
+}
+#onetime, #recurring {
+    display: flex;
+    flex-direction: row;
+}
+#onetime {
+    background-color: var(--alt-bg);
+    border: 5px outset var(--alt-bg);
+}
+#recurring {
+    background-color: var(--alt-bg-2);
+    border: 5px outset var(--alt-bg-2);
+}
+.donation {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    align-items: center;
+}
+.option {
+    flex: 1;
+}
+.donation a {
+    background-color: var(--alt-bg-1);
+    border: 5px outset var(--alt-bg-1);
+    color: var(--hl);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    margin-left: auto;
+}
+.donation a:hover {
+    border: 5px inset var(--alt-bg-1);
+}
+span {
+    color: var(--alt-hl);
+}
+#bottom {
+    display: flex;
+    flex-direction: column;
+    height: 52%;
+}
+#tiers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 99%;
+    margin-top: 2%;
+}
+.tier {
+    width: 25%;
+    height: 100%;
+}
+#tier4 {
+    background-color: var(--alt-bg);
+    border: 5px outset var(--alt-bg);
+}
+#tier4:hover {
+    border: 5px inset var(--alt-bg);
+}
+#tier3 {
+    background-color: var(--alt-bg-2);
+    border: 5px outset var(--alt-bg-2);
+}
+#tier3:hover {
+    border: 5px inset var(--alt-bg-2);
+}
+#tier2 {
+    background-color: var(--alt-bg-3);
+    border: 5px outset var(--alt-bg-3);
+}
+#tier2:hover {
+    border: 5px inset var(--alt-bg-3);
+}
+#tier1 {
+    background-color: var(--alt-bg-1);
+    border: 5px outset var(--alt-bg-1);
+}
+#tier1:hover {
+    border: 5px inset var(--alt-bg-1);
+}
+.tier a {
+    color: var(--hl);
+    display: block;
+    width: 100%;
+    height: 90%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+.tier a ul {
+   text-align: left;
+   margin: 0;
+}
+.tier a ul li {
+   padding-top: 1%;
+   padding-bottom: 1%;
+}
+/*
+.tier:hover {
+    padding-top: 5px;
+}
+*/
+{% endblock %}
+
+{% block toplinks %}
+<a id="home" href="/">Home</a>
+<a id="about" href="/about">About</a>
+<a id="donate" href="/donate" class="selected">Donate</a>
+<a id="merch" href="/merch">Merch</a>
+{% endblock %}
+
+{% block content %}
+<div id="container">
+  <div id="top">
+    <h1>Donate to The Nest</h1>
+    <h2>Help us fund construction for our new space!</h2>
+    <div id="topsides">
+      <div id="topleft">
+        <p>
+          &emsp;&emsp;
+          We're currently in the midst of a large-scale fundraiser to open a brick and mortar venue here in West Lafayette! We've found our location, a warehouse located downtown directly next to Purdue campus. To convert it from a warehouse into the 300-capacity live music venue we're picturing, we'll need to install 6-fixture bathrooms and ADA-compliant ramps, which we expect to cost $100K. Please give what you can; together we can make this happen!
+        </p>
+      </div>
+      <div id="topright">
+        <div id="onetime" class="donation">
+          <h3>One-Time Donation</h3>
+          <a href="https://www.gofundme.com/f/build-the-nest-growing-our-community-for-all" target="_blank"><h3>Donate</h3></a>
+        </div>
+        <div id="recurring" class="donation">
+          <h3>Recurring Donations</h3>
+          <a><h3>Coming Soon!</h3></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="bottom">
+    <h1>Sponsor The Nest</h1>
+    <h2>Are you a local business? Help us out and let us help you!</h2>
+    <div id="tiers">
+      <div class="tier" id="tier4">
+        <a>
+          <img src="{{ url_for('static', filename='logo.png') }}" width="150px">
+          <h1>Tier 4</h1>
+          <h2>$500</h2>
+          <ul>
+            <li>Description of Perk</li>
+            <li>Another Description of Perk</li>
+            <li>Description of Perk</li>
+            <li>Another Description of Perk</li>
+            <li>Description of Perk</li>
+          </ul>
+        </a>
+      </div>
+      <div class="tier" id="tier3">
+        <a>
+          <img src="{{ url_for('static', filename='logo.png') }}" width="150px">
+          <h1>Tier 3</h1>
+          <h2>$1000</h2>
+          <ul>
+            <li>Description of Perk</li>
+            <li>Another Description of Perk</li>
+            <li>Description of Perk</li>
+            <li>Another Description of Perk</li>
+            <li>Description of Perk</li>
+          </ul>
+        </a>
+      </div>
+      <div class="tier" id="tier2">
+        <a>
+          <img src="{{ url_for('static', filename='logo.png') }}" width="150px">
+          <h1>Tier 2</h1>
+          <h2>$2500</h2>
+          <ul>
+            <li>Description of Perk</li>
+            <li>Another Description of Perk</li>
+            <li>Description of Perk</li>
+            <li>Another Description of Perk</li>
+            <li>Description of Perk</li>
+          </ul>
+        </a>
+      </div>
+      <div class="tier" id="tier1">
+        <a>
+          <img src="{{ url_for('static', filename='logo.png') }}" width="150px">
+          <h1>Tier 1</h1>
+          <h2>$5000+</h2>
+          <ul>
+            <li>Description of Perk</li>
+            <li>Another Description of Perk</li>
+            <li>Description of Perk</li>
+            <li>Another Description of Perk</li>
+            <li>Description of Perk</li>
+          </ul>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

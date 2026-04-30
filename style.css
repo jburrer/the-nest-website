@@ -1,0 +1,107 @@
+body {
+    background: url(bg-bw.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin: 0;
+    font-family: Times New Roman;
+    font-size: 1.25em;
+    overflow: hidden;
+}
+#page {
+    background-color: #4d0000;
+    border-left: 5px outset darkred;
+    border-right: 5px outset darkred;
+    color: black;
+    width: 90%;
+    max-width: 960px;
+    height: 96vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.bar {
+    height: 4vh;
+    width: 100%;
+    display: flex;
+}
+.bar a {
+    background-color: darkred;
+    border: 5px outset darkred;
+    color: yellow;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+.bar a.selected {
+    background-color: #4d0000;
+    border: none;
+    padding-top: 5px;
+}
+.bar a.selected:hover {
+    border: none;
+    padding-top: 5px;
+}
+.bar a:hover {
+    border: 5px inset darkred;
+    padding-top: 5px;
+}
+#topbar a {
+    width: 25%;
+}
+#bottombar a {
+    width: 50%;
+}
+#home, #performance-guidelines {
+    border-left: none;
+}
+#merch, #finances {
+    border-right: none;
+}
+#main-box {
+    height: 88vh;
+    padding: 2%;
+    color: white;
+    overflow: scroll;
+}
+h1, h2, h3 {
+    padding: 1%;
+    margin: 0;
+}
+h1 {
+    color: yellow;
+}
+h2 {
+    color: green;
+}
+p {
+    padding: 1%;
+    margin: 0;
+}
+hr {
+    color: darkred;
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td {
+    border: 1px outset darkred;
+}
+th {
+    background-color: darkred;
+    color: yellow;
+}
+td {
+    color: white;
+}
+#finances-page h2 {
+    margin-top: 5%;
+}
+em {
+    color: green;
+}

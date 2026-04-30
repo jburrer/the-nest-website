@@ -1,0 +1,99 @@
+:root {
+  --bg: #4d0000;
+  --alt-bg: darkred;
+  --alt-bg-1: green;
+  --alt-bg-2: purple;
+  --alt-bg-3: mediumblue;
+  --hl: yellow;
+  --alt-hl: pink;
+  --text: white;
+}
+body {
+    background: url(bg-bw.jpg);
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    font-family: Times New Roman;
+    font-size: 1.25em;
+    overflow: hidden;
+}
+#page {
+    background-color: var(--bg);
+    border-left: 5px outset var(--alt-bg);
+    border-right: 5px outset var(--alt-bg);
+    max-width: 960px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 1000px) {
+    #page {
+        border: none !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+.bar {
+    height: 4vh;
+    width: 100%;
+    display: flex;
+}
+.bar a {
+    background-color: var(--alt-bg);
+    border: 5px outset var(--alt-bg);
+    color: var(--hl);
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+.bar a.selected {
+    background-color: var(--bg);
+    border: none;
+    padding-top: 5px;
+}
+.bar a.selected:hover {
+    border: none;
+    padding-top: 5px;
+}
+.bar a:hover {
+    border: 5px inset var(--alt-bg);
+    padding-top: 5px;
+}
+#topbar a {
+    width: 25%;
+}
+#bottombar a {
+    width: 50%;
+}
+#home, #performance-guidelines {
+    border-left: none;
+}
+#merch, #finances {
+    border-right: none;
+}
+#main-box {
+    height: 90vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    color: var(--text);
+    overflow: scroll;
+}
+.current {
+    display: inline-block;
+}
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+h1, h3 {
+    color: var(--hl);
+}
+h2 {
+    color: var(--alt-hl);
+}
+p {
+    padding: 1%;
+    margin: 0;
+}

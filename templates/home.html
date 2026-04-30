@@ -1,0 +1,201 @@
+{% extends "layout.html" %}
+
+{% block style %}
+@media screen and (max-width: 1000px) {
+    #top {
+        flex-direction: column !important;
+        height: unset !important;
+    }
+    #logobox {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    #logobox img {
+        float: none !important;
+        display: block !important;
+        margin: auto !important;
+        padding-left: 25px !important;
+    }
+    #titlebox {
+        width: 100% !important;
+        text-align: center !important;
+    }
+    #linkbox {
+        margin: auto !important;
+        margin-top: 3% !important;
+    }
+    #middle {
+        height: unset !important;
+        padding-top: 3% !important;
+    }
+    #bottom {
+        flex-direction: column !important;
+        height: unset !important;
+    }
+    #left, #right {
+        width: 100% !important;
+        margin-bottom: 5% !important;
+    }
+}
+h1 {
+    font-size: 200%;
+}
+h2 {
+    font-size: 125%;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30%;
+}
+#middle {
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    padding-bottom: 2%;
+}
+#bottom {
+    display: flex;
+    flex-direction: row;
+    height: 53%;
+}
+#logobox {
+    width: 40%;
+    margin-right: 5%;
+}
+#logobox img {
+    float: right;
+}
+#titlebox{
+    width: 60%;
+    text-align: left;
+}
+#linkbox {
+    margin-top: 1.5%;
+    height: 4vh;
+    width: 90%;
+    display: flex;
+}
+#linkbox a {
+    background-color: var(--alt-bg-1);
+    border: 5px outset var(--alt-bg-1);
+    color: var(--hl);
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    width: 33%;
+}
+#linkbox a:hover {
+    border: 5px inset var(--alt-bg-1);
+    padding-top: 5px;
+}
+#left {
+    width: 50%;
+    height: 100%;
+}
+#right {
+    width: 50%;
+    height: 100%;
+}
+#left a, #right a {
+    height: 90%;
+    display: block;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+}
+#left a {
+    background-color: var(--alt-bg);
+    border: 5px outset var(--alt-bg);
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left a:hover {
+    border: 5px inset var(--alt-bg);
+}
+#right a {
+    background-color: var(--alt-bg-2);
+    border: 5px outset var(--alt-bg-2);
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#right a:hover {
+    border: 5px inset var(--alt-bg-2);
+}
+{% endblock %}
+
+
+{% block toplinks %}
+<a id="home" href="/" class="selected">Home</a>
+<a id="about" href="/about">About</a>
+<a id="donate" href="/donate">Donate</a>
+<a id="merch" href="/merch">Merch</a>
+{% endblock %}
+
+{% block content %}
+
+<div id="container">
+
+  <div id="top">
+  
+    <div id="logobox">
+      <img src="{{ url_for('static', filename='logo.png') }}" width="300px">
+    </div>
+    
+    <div id="titlebox">
+      <h1>✨🪹 The Nest 🪹✨</h1>
+      <h2>Nonprofit Music Venue in West Lafayette, IN</h2>
+      <div id="linkbox">
+        <a target="_blank" href="https://instagram.com/the_nest_207">Instagram</a>
+        <a target="_blank" href="https://youtube.com/@the_nest_207">Youtube</a>
+        <a target="_blank" href="mailto:thenestvenue207@gmail.com">Email</a>
+      </div>
+    </div>
+  
+  </div>
+
+  <div id="middle">
+    <p>&emsp;&emsp;
+The Nest is a nonprofit worker cooperative music venue located in West Lafayette, Indiana. We provide a space for our local scene to thrive as well as for both Purdue students and Lafayette-area locals to participate in a vibrant, in-person community. We started in 2023 as a pair of Purdue students running DIY shows out of our basement, but we've since grown into an entertainment cooperative with 20 staff members opening our own all-ages brick and mortar music venue!
+    </p>
+  </div>
+  
+  <div id="bottom">
+
+    <div id="left">
+      <a href="/donate">
+        <div>
+          <img src="{{ url_for('static', filename='gofundme.jpg') }}"
+               height="275"
+               style="margin-bottom: 5%">
+          <h1>We need your help!</h1>
+        </div>
+      </a>
+    </div>
+    
+    <div id="right">
+      <a href="/merch">
+        <div>
+          <img src="{{ url_for('static', filename='merch.jpg') }}"
+               height="275px"
+               style="margin-bottom: 5%">
+          <h1>Check out our merch!</h1>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}
