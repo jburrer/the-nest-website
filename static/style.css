@@ -23,6 +23,8 @@
     }
     .bar {
         height: 5dvh !important;
+    }
+    .bar a {
         overflow: hidden !important;
     }
 }
