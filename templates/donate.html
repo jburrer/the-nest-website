@@ -144,11 +144,12 @@ span {
    padding-top: 1%;
    padding-bottom: 1%;
 }
-/*
-.tier:hover {
-    padding-top: 5px;
+.tier h1 {
+    font-size: 1.5vw;
 }
-*/
+.tier h2 {
+    margin-bottom: 5%;
+}
 {% endblock %}
 
 {% block toplinks %}
@@ -188,9 +189,9 @@ span {
     <div id="tiers">
       <div class="tier" id="tier4">
         <a>
-          <img src="{{ url_for('static', filename='logo.png') }}" width="150px">
-          <h1>Tier 4</h1>
-          <h2>$500</h2>
+          <img src="{{ url_for('static', filename='baby-bird.png') }}" width="150vw">
+          <h1>Baby Bird</h1>
+          <h2>$500+</h2>
           <ul>
             <li>Description of Perk</li>
             <li>Another Description of Perk</li>
@@ -202,9 +203,9 @@ span {
       </div>
       <div class="tier" id="tier3">
         <a>
-          <img src="{{ url_for('static', filename='logo.png') }}" width="150px">
-          <h1>Tier 3</h1>
-          <h2>$1000</h2>
+          <img src="{{ url_for('static', filename='flying-bird.png') }}" width="150vw">
+          <h1>Soaring Sparrow</h1>
+          <h2>$1000+</h2>
           <ul>
             <li>Description of Perk</li>
             <li>Another Description of Perk</li>
@@ -216,9 +217,9 @@ span {
       </div>
       <div class="tier" id="tier2">
         <a>
-          <img src="{{ url_for('static', filename='logo.png') }}" width="150px">
-          <h1>Tier 2</h1>
-          <h2>$2500</h2>
+          <img src="{{ url_for('static', filename='mother-hen.png') }}" width="150vw">
+          <h1>Mother Hen</h1>
+          <h2>$2500+</h2>
           <ul>
             <li>Description of Perk</li>
             <li>Another Description of Perk</li>
@@ -230,8 +231,8 @@ span {
       </div>
       <div class="tier" id="tier1">
         <a>
-          <img src="{{ url_for('static', filename='logo.png') }}" width="150px">
-          <h1>Tier 1</h1>
+          <img src="{{ url_for('static', filename='eagle.png') }}" width="150vw">
+          <h1>Valiant Eagle</h1>
           <h2>$5000+</h2>
           <ul>
             <li>Description of Perk</li>

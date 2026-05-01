@@ -88,6 +88,7 @@ h2 {
     border: 5px outset var(--alt-bg-1);
     color: var(--hl);
     margin: 0;
+    line-height: 3dvh;
     text-align: center;
     text-decoration: none;
     width: 33%;
@@ -133,6 +134,9 @@ h2 {
 #right a:hover {
     border: 5px inset var(--alt-bg-2);
 }
+#bottom img {
+    margin-bottom: 2% !important;
+}
 {% endblock %}
 
 
@@ -161,6 +165,8 @@ h2 {
         <a target="_blank" href="https://youtube.com/@the_nest_207">Youtube</a>
         <a target="_blank" href="mailto:thenestvenue207@gmail.com">Email</a>
       </div>
+      <a target="_blank" href="https://www.gofundme.com/f/build-the-nest-growing-our-community-for-all">
+      </a>
     </div>
   
   </div>
@@ -177,8 +183,7 @@ The Nest is a nonprofit worker cooperative music venue located in West Lafayette
       <a href="/donate">
         <div>
           <img src="{{ url_for('static', filename='gofundme.jpg') }}"
-               width="80%"
-               style="margin-bottom: 5%">
+               width="300vw">
           <h1>We need your help!</h1>
         </div>
       </a>
@@ -188,8 +193,7 @@ The Nest is a nonprofit worker cooperative music venue located in West Lafayette
       <a href="/merch">
         <div>
           <img src="{{ url_for('static', filename='merch.jpg') }}"
-               width="80%"
-               style="margin-bottom: 5%">
+               width="300vw">
           <h1>Check out our merch!</h1>
         </div>
       </a>
